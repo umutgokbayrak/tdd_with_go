@@ -23,3 +23,4 @@ In order to run the tests just use:
 
     go test -v
 
+.
