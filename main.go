@@ -3,6 +3,7 @@ package main
 import (
   "os"
   "strings"
+  "fmt"
 )
 
 func main() {
@@ -13,4 +14,6 @@ func main() {
     os.Getenv("APP_DB_NAME"),
   )
   a.Run(":8001")
+
+  fmt.Println("Application launched")
 }

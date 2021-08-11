@@ -33,7 +33,10 @@ func (a *App) Initialize(user, password, dbname string) {
 }
 
 func (a *App) Run(addr string) {
-  log.Fatal(http.ListenAndServe(":8010", a.Router))
+  if addr == "" {
+    addr = ":8010"
+  }
+  log.Fatal(http.ListenAndServe(addr, a.Router))
 }
 
 func (a *App) getProduct(w http.ResponseWriter, r *http.Request) {
