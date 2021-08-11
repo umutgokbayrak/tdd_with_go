@@ -1,3 +1,5 @@
+Forked from https://github.com/juancurti/go_tdd_tutorial/
+
 # Running Postgres on your local machine
 Using Docker is both simple and convenient. 
 
@@ -20,3 +22,4 @@ In order to run this application you need to define 3 env variables such as
 In order to run the tests just use:
 
     go test -v
+
